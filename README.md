@@ -2,7 +2,6 @@
 
 [![NPM version](https://img.shields.io/npm/v/semantic-release-npm-github.svg)](https://www.npmjs.com/package/semantic-release-npm-github)
 [![Build Status](https://github.com/sinedied/semantic-release-npm-github/workflows/release/badge.svg)](https://github.com/sinedied/semantic-release-npm-github/actions)
-![Node version](https://img.shields.io/node/v/semantic-release-npm-github)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
@@ -39,7 +38,7 @@
   ```json
   {
     "extends": "semantic-release-npm-github",
-    "branch": "master"
+    "branch": "main"
   }
   ```
 
