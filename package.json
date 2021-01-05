@@ -20,7 +20,7 @@
   "main": ".releaserc.json",
   "scripts": {
     "test": "xo",
-    "release:check": "npm run release -s -- --dry-run"
+    "release:check": "semantic-release -b main --dry-run"
   },
   "author": {
     "name": "Yohan Lasorsa",

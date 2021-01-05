@@ -33,7 +33,7 @@ jobs:
           npm build --if-present
         env:
           CI: true
-      - run: npx semantic-release
+      - run: npx semantic-release -b main
         if: success()
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
