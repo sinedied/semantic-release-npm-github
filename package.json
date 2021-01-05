@@ -1,0 +1,52 @@
+{
+  "name": "semantic-release-npm-github",
+  "version": "1.0.0",
+  "description": "Shareable configuration for automated package publication to NPM and GitHub using semantic-release, tailored for OSS projects",
+  "repository": "sinedied/semantic-release-npm-github",
+  "homepage": "https://github.com/sinedied/semantic-release-npm-github",
+  "bugs": {
+    "url": "https://github.com/sinedied/semantic-release-npm-github/issues"
+  },
+  "keywords": [
+    "semantic-release",
+    "semantic-release-config",
+    "changelog",
+    "publish",
+    "release",
+    "npm",
+    "github",
+    "git"
+  ],
+  "main": ".releaserc.json",
+  "scripts": {
+    "test": "xo",
+    "release:check": "npm run release -s -- --dry-run"
+  },
+  "author": {
+    "name": "Yohan Lasorsa",
+    "url": "https://twitter.com/sinedied"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.2.0",
+    "@semantic-release/npm": "^7.0.9",
+    "@semantic-release/release-notes-generator": "^9.0.1"
+  },
+  "devDependencies": {
+    "semantic-release": "^17.3.1",
+    "xo": "^0.37.1"
+  },
+  "peerDependencies": {
+    "semantic-release": ">=17.3.1"
+  },
+  "xo": {
+    "space": true,
+    "prettier": true
+  },
+  "files": [
+    ".releaserc.json"
+  ]
+}
