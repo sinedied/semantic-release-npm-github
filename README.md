@@ -97,4 +97,4 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 ```
 
-In addition, for this workflow to work correctly you have generate an [NPM authentication token](https://docs.npmjs.com/cli/token) and set it to the [`NPM_TOKEN` secret](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets) in your GitHub repository.
+In addition, for this workflow to work correctly you have to generate an [NPM authentication token](https://docs.npmjs.com/cli/token) and set it to the [`NPM_TOKEN` secret](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets) in your GitHub repository.
