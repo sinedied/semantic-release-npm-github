@@ -15,8 +15,7 @@
 - Generates or updates [changelog](https://github.com/semantic-release/changelog)
 - Bumps the version in `package.json`
 - Publishes package to [NPM](https://npmjs.org)
-- Commits the changes made and creates a [git tag](https://github.com/semantic-release/git)
-) with the release version
+- Commits the changes made and creates a [git tag](https://github.com/semantic-release/git) with the release version
 - Creates a [GitHub release](https://github.com/semantic-release/github) with the package
 
 ## Install
