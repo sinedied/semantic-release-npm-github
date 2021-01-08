@@ -1,3 +1,5 @@
+## [1.0.4](https://github.com/sinedied/semantic-release-npm-github/compare/1.0.3...1.0.4) (2021-01-08)
+
 ## [1.0.3](https://github.com/sinedied/semantic-release-npm-github/compare/1.0.2...1.0.3) (2021-01-08)
 
 ## [1.0.2](https://github.com/sinedied/semantic-release-npm-github/compare/1.0.1...1.0.2) (2021-01-06)
