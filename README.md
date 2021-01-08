@@ -97,4 +97,35 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 ```
 
-In addition, for this workflow to work correctly you have to generate an [NPM authentication token](https://docs.npmjs.com/cli/token) and set it to the [`NPM_TOKEN` secret](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets) in your GitHub repository.
+In addition, for this workflow to work correctly you have to generate an [NPM authentication token](https://docs.npmjs.com/cli/token) and set it to the [`NPM_TOKEN` secret](https://docs.github.com/actions/reference/encrypted-secrets) in your GitHub repository.
+
+### Note on GitHub protected branches
+
+If you're releasing a [GitHub protected branch](https://docs.github.com/github/administering-a-repository/about-protected-branches) you need to change the git commiter to an owner/admin and allow repo admins to bypass the branch protection (make sure "include administrators" is **disabled** in the branch protection rules.)
+
+If your repo is under an organisation, you can create a bot account and give it admin rights on the repo. If your repo is under a personal account, you have no choice to make the repo owner the commiter for the release.
+
+Either way, you have to create a [GitHub personal access token](https://docs.github.com/github/authenticating-to-github/creating-a-personal-access-token) for the commiter account and give it the "repo" access rights. Then set it to the [`GH_TOKEN` secret](https://docs.github.com/actions/reference/encrypted-secrets) in your GitHub repository.
+
+Finally, make these two changes to your workflow:
+
+```yml
+...
+    - uses: actions/checkout@v2
+      # Add this to commit with a different account than the one
+      # used for checkout
+      with:
+        persist-credentials: false
+...
+    - run: npx semantic-release
+      if: success()
+      env:
+        # Change the secret used here
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        # Add this to set the new commiter for the release
+        GIT_COMMITTER_NAME: admin-or-owner
+        GIT_COMMITTER_EMAIL: associated-email@address.com
+```
+
+> Note: GitHub secrets not shared with forks and pull requests, so no one that doesn't have write access to your repo can use of them.
