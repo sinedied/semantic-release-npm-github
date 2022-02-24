@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/sinedied/semantic-release-npm-github/compare/2.0.0...3.0.0) (2022-02-24)
+
+
+### Features
+
+* upgrade packages ([2df9c97](https://github.com/sinedied/semantic-release-npm-github/commit/2df9c9700c4b9a98d176728a42976c58cfb0b026))
+
+
+### BREAKING CHANGES
+
+* requires semantic-release >= 19
+
 # [2.0.0](https://github.com/sinedied/semantic-release-npm-github/compare/1.0.6...2.0.0) (2021-09-30)
 
 
