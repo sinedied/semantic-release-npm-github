@@ -32,15 +32,15 @@
     "@semantic-release/commit-analyzer": "^9.0.1",
     "@semantic-release/git": "^10.0.0",
     "@semantic-release/github": "^8.0.1",
-    "@semantic-release/npm": "^8.0.0",
+    "@semantic-release/npm": "^9.0.0",
     "@semantic-release/release-notes-generator": "^10.0.2"
   },
   "devDependencies": {
-    "semantic-release": "^18.0.0",
-    "xo": "^0.44.0"
+    "semantic-release": "^19.0.2",
+    "xo": "^0.48.0"
   },
   "peerDependencies": {
-    "semantic-release": ">=18.0.0"
+    "semantic-release": ">=19.0.0"
   },
   "xo": {
     "space": true,
