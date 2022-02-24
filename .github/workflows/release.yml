@@ -28,9 +28,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '>=14'
-      - run: |
-          npm ci
-          npm build --if-present
+      - run: npm ci
         env:
           CI: true
       - run: npx semantic-release -b main
