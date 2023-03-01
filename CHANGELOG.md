@@ -1,3 +1,13 @@
+# [4.0.0](https://github.com/sinedied/semantic-release-npm-github/compare/3.0.0...4.0.0) (2023-03-01)
+
+
+* chore!: update packages ([4545111](https://github.com/sinedied/semantic-release-npm-github/commit/4545111f75709fabe85ecab5e68f5e7031b00019))
+
+
+### BREAKING CHANGES
+
+* requires semantic-release >= 20
+
 # [3.0.0](https://github.com/sinedied/semantic-release-npm-github/compare/2.0.0...3.0.0) (2022-02-24)
 
 
