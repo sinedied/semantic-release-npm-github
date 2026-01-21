@@ -1,3 +1,15 @@
+# [6.0.0](https://github.com/sinedied/semantic-release-npm-github/compare/5.0.0...6.0.0) (2026-01-21)
+
+
+### Features
+
+* upgrade packages ([c89e7d4](https://github.com/sinedied/semantic-release-npm-github/commit/c89e7d43e8dad1144f935e3a5d79480724bc4191))
+
+
+### BREAKING CHANGES
+
+* requires semantic-release >= 24 and Node.js >= 22
+
 # [5.0.0](https://github.com/sinedied/semantic-release-npm-github/compare/4.0.0...5.0.0) (2023-07-21)
 
 

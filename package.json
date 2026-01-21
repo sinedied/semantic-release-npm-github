@@ -1,6 +1,6 @@
 {
   "name": "semantic-release-npm-github",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "description": "Shareable configuration for automated package publication to NPM and GitHub using semantic-release, tailored for OSS projects",
   "repository": "sinedied/semantic-release-npm-github",
   "homepage": "https://github.com/sinedied/semantic-release-npm-github",
